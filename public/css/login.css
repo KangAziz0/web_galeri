@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Oleo+Script:wght@400;700&family=Pacifico&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(63, 77, 122);
+}
+.img {
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.login {
+    border: 1px solid rgba(212, 209, 209, 0.912);
+    width: 25%;
+    height: 88%;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: white;
+}
+.login h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Pacifico";
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-weight: 400;
+}
+.login form {
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.login .text-field {
+    position: relative;
+    /* border-bottom: 2px solid #adadad; */
+    margin: 10px 0;
+}
+.text-field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid rgba(212, 209, 209, 0.912);
+    background: none;
+    outline: none;
+}
+.text-field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 14px;
+    pointer-events: none;
+    transition: .5s ;
+}
+.text-field span::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+.text-field input:focus ~ label,
+.text-field input:valid ~ label{
+    top: -1px;
+    color: rgb(75, 180, 248);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.btn{
+    width: 100%;
+    height: 38px;
+    border: 1px solid;
+    background-color: rgb(75, 180, 248);
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.or{
+    width: 100%;
+    color:#adadad ;
+    margin-bottom: 20px;
+}
+.signup{
+    border: 1px solid  rgba(212, 209, 209, 0.912);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+}
+.signup a{
+    color:  rgb(75, 180, 248);
+    text-decoration: none;
+    font-weight: 600;
+}
+.buat {
+    border: 1px solid    rgba(212, 209, 209, 0.912);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+}
+.buat a{
+    color:  rgb(75, 180, 248);
+    text-decoration: none;
+    font-weight: 600;
+}
